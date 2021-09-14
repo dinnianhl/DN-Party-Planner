@@ -1,0 +1,663 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Rancho&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", "Rancho", sans-serif;
+}
+
+/* Main */
+main {
+  overflow: auto;
+}
+
+#content1 {
+  float: left;
+  width: 100%;
+}
+
+#content2 {
+  float: left;
+  width: 70%;
+}
+
+/* Header */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-family: "Rancho";
+  font-size: 30px;
+  color: #f6b301;
+}
+
+header h1 span {
+  color: #7d9499;
+}
+
+/* Nav */
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  text-align: center;
+  padding-left: 40px;
+}
+
+nav a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #1b2e35;
+}
+
+nav a:hover {
+  color: #f6b301;
+}
+
+/* Toggle bar */
+nav .burger {
+  width: 25px;
+  cursor: pointer;
+}
+nav .burger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin-bottom: 3px;
+  background-color: #f6b301;
+}
+
+.active-link {
+  position: relative;
+  color: #f8bf1f;
+}
+
+/* Beranda */
+#beranda {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  background-color: #ffffff;
+  color: #1b2e35;
+  align-items: center;
+  padding: 120px;
+  gap: 65px;
+}
+
+#beranda img {
+  width: 100%;
+  max-width: 900px;
+}
+
+#beranda h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #1b2e35;
+  line-height: 50px;
+}
+
+#beranda h1 span {
+  font-family: "Rancho";
+  font-size: 45px;
+  color: #f6b301;
+}
+
+#beranda h1 span:last-child {
+  color: #7d9499;
+}
+
+#beranda p {
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+#beranda a {
+  text-decoration: none;
+}
+
+.btn-home {
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #ed776b;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.btn-home:hover {
+  background-color: #f6b301;
+  color: #ffffff;
+}
+
+/* Layanan */
+#layanan {
+  background-color: #ffd345;
+  padding: 120px;
+}
+
+#layanan h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #1b2e35;
+}
+
+.layanan {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  padding: 40px 0;
+}
+
+.layanan-menu {
+  background-color: #f9fafb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+}
+
+.layanan-menu:hover {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+
+.layanan-menu div {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.layanan-menu img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+
+.layanan-menu h1 {
+  font-size: 16px;
+  padding: 10px 20px 0 20px;
+  text-align: center;
+}
+
+.layanan-menu p {
+  font-size: 12px;
+  text-align: left;
+  padding: 10px 20px 15px 20px;
+}
+
+.btn-reservation {
+  padding: 10px;
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #ed776b;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.btn-reservation:hover {
+  background-color: #f6b301;
+  color: #ffffff;
+}
+
+/* Keuntungan */
+#keuntungan {
+  width: 100%;
+  padding: 120px;
+  background-color: #ffffff;
+  color: #1b2e35;
+}
+
+#keuntungan h2 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.keuntungan {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.keuntungan img {
+  width: 100%;
+}
+
+.keuntungan p {
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Testimoni */
+#testimoni {
+  padding: 90px 120px;
+  background-color: #ffd345;
+}
+
+#testimoni h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #1b2e35;
+}
+
+.testimoni {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  padding: 40px;
+}
+
+.testimoni-menu {
+  padding: 60px;
+  background-color: #f9fafb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+}
+
+.testimoni-menu:hover {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+
+.testimoni-menu div {
+  text-align: center;
+}
+
+.testimoni img {
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.testimoni h1 {
+  font-size: 16px;
+  padding: 10px 20px 0 20px;
+  text-align: center;
+}
+
+.testimoni p {
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 20px 15px 20px;
+}
+
+/* Kontak */
+#kontak {
+  background-color: #ffffff;
+  padding: 100px 120px;
+  margin: 15px;
+  border-radius: 16px;
+  color: #1b2e35;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#kontak p {
+  padding: 20px 0;
+}
+
+#kontak img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.kontak-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 25px 25px 0 25px;
+  background-color: #ffd345;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.kontak-form input,
+.kontak-form textarea {
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  background-color: #ececec;
+  font-size: 12px;
+  outline: none;
+  border: none;
+}
+
+.kontak-form input::placeholder,
+.kontak-form textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-send {
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #ed776b;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  outline: none;
+  border: none;
+}
+
+.btn-send:hover {
+  background-color: #ffd345;
+  color: #ffffff;
+}
+
+/* aside */
+aside {
+  float: right;
+  background-color: #ffffff;
+  color: #1b2e35;
+  width: 30%;
+}
+.profile {
+  background-color: #ffffff;
+  padding: 90px 0;
+  text-align: center;
+  margin: 15px;
+  border-radius: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+aside h2 {
+  padding: 20px;
+}
+
+aside img {
+  width: 150px;
+}
+
+aside section table {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+aside th,
+aside td {
+  font-size: 14px;
+  text-align: left;
+  padding: 10px;
+  border-radius: 16px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #1b2e35;
+  color: #ffffff;
+}
+
+footer h3 {
+  font-family: "Rancho";
+  font-size: 30px;
+  color: #f6b301;
+}
+
+footer h3 span:last-child {
+  color: #7d9499;
+}
+
+footer div a {
+  color: #ffffff;
+}
+
+footer div i {
+  font-size: 25px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1100px) {
+  nav ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  nav ul li span {
+    padding: 10px 28px;
+    border-radius: 5px;
+    background-color: #1b2e35;
+    color: #ffffff;
+  }
+
+  nav ul li span a {
+    color: #ffffff;
+  }
+
+  .layanan-menu img {
+    width: 100%;
+  }
+
+  #testimoni {
+    padding: 120px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1099px) {
+  nav ul {
+    display: flex;
+    align-items: center;
+  }
+
+  nav ul li span {
+    padding: 10px 28px;
+    border-radius: 5px;
+    background-color: #1b2e35;
+    color: #ffffff;
+  }
+
+  nav ul li span a {
+    color: #ffffff;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  #beranda {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    line-height: 30px;
+    text-align: center;
+    padding: 100px 120px 40px 120px;
+  }
+
+  #beranda img {
+    width: 80%;
+    padding-top: 30px;
+  }
+
+  .layanan {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  #testimoni {
+    padding: 90px 40px;
+  }
+
+  .testimoni-menu {
+    padding: 20px;
+  }
+
+  #content2 {
+    float: left;
+    width: 100%;
+  }
+
+  #kontak {
+    text-align: center;
+  }
+
+  aside {
+    float: right;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-bar {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    background-color: #f9fafb;
+    transition: 0.4s;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 100;
+  }
+
+  .nav-bar li {
+    padding: 20px 20px;
+  }
+
+  .nav-bar a.btn {
+    color: #1b2e35;
+    background-color: #f9fafb;
+  }
+
+  nav a.btn:hover {
+    color: #f6b301;
+    background-color: #f9fafb;
+  }
+
+  .show-menu {
+    top: 100px;
+  }
+
+  #beranda {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    text-align: center;
+    padding: 100px 40px 40px 40px;
+  }
+
+  #beranda img {
+    width: 75%;
+  }
+
+  #layanan {
+    padding: 90px;
+  }
+
+  .layanan {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .layanan-menu div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    align-items: center;
+  }
+
+  .layanan-menu p {
+    text-align: center;
+  }
+
+  .keuntungan {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .keuntungan p {
+    font-size: 16px;
+  }
+
+  #testimoni {
+    padding: 120px 40px;
+  }
+
+  .testimoni {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 60px;
+    padding: 40px;
+  }
+
+  .testimoni-menu {
+    padding: 20px;
+  }
+
+  #content2 {
+    float: left;
+    width: 100%;
+  }
+
+  #kontak {
+    text-align: center;
+  }
+
+  #kontak h2,
+  #kontak p {
+    text-align: center;
+  }
+
+  #kontak {
+    padding: 100px 60px;
+  }
+
+  .kontak-form input,
+  .kontak-form textarea {
+    padding: 10px;
+  }
+  .kontak-form input::placeholder,
+  .kontak-form textarea::placeholder {
+    font-size: 12px;
+  }
+
+  aside {
+    float: right;
+    width: 100%;
+  }
+}
